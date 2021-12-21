@@ -1,0 +1,247 @@
+body{
+    margin: 0;
+}
+
+/*NAVEGADOR*/
+
+nav {
+  background-color: #181818;
+  height: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 1rem;
+  padding: 0.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+  
+nav a:hover {
+  background-color: blue;
+}
+  
+nav a:visited {
+  color: white;
+}
+
+/*TEXTO PRESENTACION*/
+
+.section1 {
+    max-width: 100vw;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #ffd5ff;
+}
+
+.presentacion {
+    font-size: 100px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: cornflowerblue;
+}
+
+.descripcion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 50px;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+/*GALERIA DE FOTOS*/
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.photo-gallery{
+    max-height: 320px;
+    max-width: 369.5px;
+}
+
+.photo-gallery:hover{
+    transform: scale(1.1);
+}
+
+/*TABLA*/
+
+.tabla-de-conocimientos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;  
+    height: 290px;
+    background-color: #d7be82;
+    
+}
+
+table {
+    text-align: center;
+}
+
+thead {
+    background-color: grey;
+    color: white;
+    font-size: 1.5rem;
+}
+
+table,
+th,
+td {
+  border: solid 2px #181818;
+  border-collapse: collapse;
+}
+
+th{
+    padding: 20px;
+}
+
+td {
+    background-color: whitesmoke;
+}
+
+/*GALERIA DE VARIOS*/
+
+.gallery2 {
+    background-color: #8fbc94;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px 20px;
+}
+ 
+.gallery2__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 400px;
+    margin: 20px;
+    border-radius: 70%;
+    box-shadow: rgba(0, 0, 0, 0.715) 10px 10px 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+   
+.gallery2__title {
+    background-color: rgba(170, 164, 164, 0.5);
+    padding: 10px;
+    border-radius: 12px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+}
+  
+.gallery2__item--item1 {
+    background-image: url(../images/image5.jpg);
+}
+  
+.gallery2__item--item2 {
+    background-image: url(../images/image6.jpg);
+}
+  
+.gallery2__item--item3 {
+    background-image: url(../images/image7.jpg);
+}  
+
+/*FOOTER*/
+
+footer {
+    background-color: #181818;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-bottom: 1rem;
+}
+
+.footer-links-container {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fca311;
+}
+
+
+/***FORMULARIO***/
+
+body {
+    margin: 0;
+    background-color: darkseagreen;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+}
+
+form{
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+fieldset {
+    border: solid 3px;
+    border-radius: 12px;
+}
+
+legend {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Cairo', sans-serif;
+}
+
+.datos-de-contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 2rem;
+    font-family: 'Cairo', sans-serif;
+}
+
+.mensaje {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.button {    
+    margin-left: 550px;
+    margin-top: 2rem;
+}
+
+.consulta {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin-top: 2rem;
+    color: #a57982;
+    font-family: 'PT Sans Narrow', sans-serif;
+}

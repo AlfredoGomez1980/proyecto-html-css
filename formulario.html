@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de contacto</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <h1>Hola, ¿en qué te puedo ayudar?. Déjame tus datos y contacto contigo</h1>
+
+    <form action="" autocomplete="off">
+      <fieldset>
+        <legend>Tus datos de contacto</legend>
+
+        <div class="datos-de-contacto">
+          <div>
+            <label for="fname">Nombre</label>
+            <input id="fname" type="text" name="user_fname" required />
+          </div>
+
+          <div>
+            <label for="lname">Apellido</label>
+            <input id="lname" type="text" name="user_lname" required />
+          </div>
+
+          <div>
+            <label for="city">País</label>
+            <select name="user_city" id="city">
+              <option value="españa">España</option>
+              <option value="francia">Francia</option>
+              <option value="portugal">Portugal</option>
+              <option value="alemania">Alemania</option>
+              <option value="china">China</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="">Email</label>
+            <input
+              id="email"
+              type="email"
+              name="user_email"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}"
+              required
+            />
+          </div>
+        </div>
+        <br />
+
+        <div class="mensaje">
+          <label for="message"></label>
+          <textarea
+            id="message"
+            name="user_message"
+            cols="50"
+            rows="10"
+            placeholder="Escribe aquí una breve descripción de lo que necesitas para poder asesorarte"
+          ></textarea>
+        </div>
+      </fieldset>
+
+      <button type="submit" class="button">Enviar</button>
+    </form>
+
+    <div class="consulta">
+        <h2>No dudes en consultarme cualquier otra cosa que quieras y esté relacionada con el mundo de la programación</h2>
+    </div>
+  </body>
+</html>
